@@ -4,22 +4,15 @@
 </head>
 <body>
     <script>
-       const mypromise = new Promise((resolve,reject)=>{
-       const password="piyush@1822";
-         if(password.length>=8)
-         {
-          resolve("password length is ok");
-         }
-         else{
-          reject("password is shorter in length");
-         }
-    })
-    mypromise.then((message)=>{
-      console.log("this is in then "+message);
-    }).catch((message)=>{
-      console.log("this is in catch "+message);
-    })
-
+       async function f()
+       {
+        let promise=new promise((resolve,reject)=>{
+            setTimeout(()=>resolve("done"),2000)
+        });
+        let result=await promise;
+        alert(result);
+       }
+       f();
     </script>
 </body>
 </html>
