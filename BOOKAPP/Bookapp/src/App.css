@@ -1,6 +1,27 @@
-#adi{
+#root{
+  width:100%;
+}
+body {
+  margin-top: 0;
+  padding: 0;
+}
+#menu {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #333;
   text-align: center;
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;          /* space between cards */
+  margin-top: 40px;
+  flex-wrap: wrap; 
+  margin-bottom: 40px ;   /* makes them wrap on smaller screens */
 }
